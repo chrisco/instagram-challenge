@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
+  root 'pictures#index'
   resources :pictures
   devise_for :users
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
