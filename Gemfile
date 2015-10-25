@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
-gem 'paperclip'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 
 group :development, :test do
