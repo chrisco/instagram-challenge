@@ -10,9 +10,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
+gem 'paperclip'
+gem 'aws-sdk'
 
 group :development, :test do
   gem 'pry'
+  gem 'dotenv-rails'
 end
 
 group :development do

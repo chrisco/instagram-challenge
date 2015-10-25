@@ -42,4 +42,14 @@ Rails.application.configure do
   # Set up the default URL options for the Devise mailer
   # as per https://github.com/plataformatec/devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # From https://github.com/thoughtbot/paperclip
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
+  # From https://github.com/thoughtbot/paperclip/wiki/Paperclip-with-Amazon-S3
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_host_name => ENV['S3_HOST_NAME'],
+    :bucket => ENV['S3_BUCKET_NAME']
+  }
 end

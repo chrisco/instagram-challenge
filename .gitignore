@@ -14,3 +14,6 @@
 
 # RubyMine
 .idea/*
+
+# gem 'dotenv-rails'
+.env
