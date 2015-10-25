@@ -1,9 +1,5 @@
 <h1>Editing Picture</h1>
 
-<%= form_for @picture, url: pictures_path, html: { multipart: true } do |form| %>
-  <%= form.file_field :image %>
-<% end %>
-
 <%= render 'form' %>
 
 <%= link_to 'Show', @picture %> |

@@ -80,7 +80,6 @@ Rails.application.configure do
   # From https://github.com/thoughtbot/paperclip/wiki/Paperclip-with-Amazon-S3
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_host_name => ENV['S3_HOST_NAME'],
     :bucket => ENV['S3_BUCKET_NAME']
   }
 end
