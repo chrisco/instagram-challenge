@@ -1,6 +1,7 @@
 class PicturesController < ApplicationController
-  before_filter :authenticate_user!, except: [:index, :show]
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
   # GET /pictures
   # GET /pictures.json
@@ -15,7 +16,7 @@ class PicturesController < ApplicationController
 
   # GET /pictures/new
   def new
-    @picture = Picture.new
+    @picture = current_user.pictures.build
   end
 
   # GET /pictures/1/edit
@@ -25,7 +26,7 @@ class PicturesController < ApplicationController
   # POST /pictures
   # POST /pictures.json
   def create
-    @picture = Picture.new(picture_params)
+    @picture = current_user.pictures.build(picture_params)
     # binding.pry
     respond_to do |format|
       if @picture.save
@@ -71,5 +72,10 @@ class PicturesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
       params.require(:picture).permit(:image, :description)
+    end
+
+    def correct_user
+      @picture = current_user.pictures.find_by(id: params[:id])
+      redirect_to picture_path, notice: 'Not authorized to edit this picture' if @picture.nil?
     end
 end
