@@ -1,22 +1,15 @@
-Instagram Challenge
-===================
+# Instagram Challenge
 
-Instructions
--------
-* Challenge time: Friday, the entire day + the weekend if you need it
-* Feel free to use Google, your notes, books, etc., but work on your own
-* You must submit a pull request to this repo with your challenge solution (or partial solution) by 9AM Monday morning.
+This educational project is a work in progress.  The idea is to create an Instagram clone with Rails using TDD/BDD.  However, I spent so much time "spiking" to try to figure out various things, such as how to upload images to S3 via Heroku with Paperclip the gem that no tests have been written yet.
 
-Task
------
+## Status - Development
 
-Build Instagram: Simple huh!
+The app is nowhere near complete, but the current version does work locally, at least for me since I have my AWS credentials stored in an ENV variable.
 
-As usual please start by
+## Status - Production
 
-* Filling out your learning plan self review for the week: https://github.com/makersacademy/learning_plan (if you haven't already)
-* Forking this repo. After cloning your fork and cd'ing into it, you'll need to [initialize a Rails app in the current directory](http://blog.jasonmeridth.com/posts/create-rails-application-in-current-directory/).
+The app is not yet working on Heroku.  I have been troubleshooting that for some hours now and am calling it quits for the night.
 
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
+## Future
 
-Bonus if you can add filters!
+I'll update this README file as may be warranted in the future.
