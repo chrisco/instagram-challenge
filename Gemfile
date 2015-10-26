@@ -13,6 +13,12 @@ gem 'foundation-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 
+group :production do
+  # Adding this as part of my Heroku-related troubleshooting
+  # See http://stackoverflow.com/a/3963953
+  gem 'rmagick'
+end
+
 group :development, :test do
   gem 'pry'
   gem 'dotenv-rails'
