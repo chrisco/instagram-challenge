@@ -16,7 +16,7 @@ gem 'aws-sdk'
 group :production do
   # Adding this as part of my Heroku-related troubleshooting
   # See http://stackoverflow.com/a/3963953
-  gem 'rmagick'
+  # gem 'rmagick'
   # Adding this as part of my Heroku-related troubleshooting
   # See https://github.com/heroku/rails_12factor
   gem 'rails_12factor'
