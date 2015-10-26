@@ -11,7 +11,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk-v1'
+gem 'aws-sdk'
 
 group :production do
   # Adding this as part of my Heroku-related troubleshooting
