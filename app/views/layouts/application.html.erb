@@ -12,36 +12,62 @@
 <body>
 <div class="row">
   <!-- Nav Section -->
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/">Instaa!</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li>
-          <%= link_to 'New Picture', new_picture_path %>
-        </li>
-        <% unless current_user %>
-          <li>
-            <%= link_to 'Sign in', new_user_session_path %>
-          </li>
-          <li>
-            <%= link_to 'Sign up', new_user_registration_path %>
-          </li>
-        <% end %>
-        <% if current_user %>
-          <li>
-            <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-          </li>
-        <% end %>
-      </ul>
-      <ul class="left">
-      </ul>
-    </section>
-  </nav>
+  <!-- BEGIN ORIGINAL -->
+  <!--<nav class="top-bar" data-topbar role="navigation">-->
+    <!--<ul class="title-area">-->
+      <!--<li class="name">-->
+        <!--<h1><a href="/">Instaa!</a></h1>-->
+      <!--</li>-->
+      <!--<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>-->
+    <!--</ul>-->
+    <!--<section class="top-bar-section">-->
+      <!--<ul class="right">-->
+        <!--<li>-->
+          <!--<%= link_to 'New Picture', new_picture_path %>-->
+        <!--</li>-->
+        <!--<% unless current_user %>-->
+          <!--<li>-->
+            <!--<%= link_to 'Sign in', new_user_session_path %>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<%= link_to 'Sign up', new_user_registration_path %>-->
+          <!--</li>-->
+        <!--<% end %>-->
+        <!--<% if current_user %>-->
+          <!--<li>-->
+            <!--<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>-->
+          <!--</li>-->
+        <!--<% end %>-->
+      <!--</ul>-->
+      <!--<ul class="left">-->
+      <!--</ul>-->
+    <!--</section>-->
+  <!--</nav>-->
+  <!-- END ORIGINAL -->
+  <!--  BEGIN ICON -->
+  <div class="icon-bar five-up">
+    <li><%= link_to new_picture_path do %> <i class="fi-social-facebook"></i> <% end %></li>
+    <li><%= link_to new_picture_path do %><span class="fi-social-facebook"></span> New Pic <% end %></li>
+
+
+    <a class="item">
+      <img src="../assets/img/images/foundation-icons/svgs/fi-bookmark.svg" >
+      <label>Bookmark</label>
+    </a>
+    <a class="item">
+      <img src="../assets/img/images/fi-info.svg" >
+      <label>Info</label>
+    </a>
+    <a class="item">
+      <img src="../assets/img/images/fi-mail.svg" >
+      <label>Mail</label>
+    </a>
+    <a class="item">
+      <img src="../assets/img/images/fi-like.svg" >
+      <label>Like</label>
+    </a>
+  </div>
+  <!--  END ICON -->
   <!-- Flash Section -->
   <% if flash %>
     <% flash.each do |name, msg| %>

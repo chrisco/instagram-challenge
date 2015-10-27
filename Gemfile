@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 
