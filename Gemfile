@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'foundation-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 gem 'coveralls', require: false
 
 group :production do

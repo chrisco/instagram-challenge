@@ -244,7 +244,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk
+  aws-sdk (< 2.0)
   capybara
   coveralls
   database_cleaner
