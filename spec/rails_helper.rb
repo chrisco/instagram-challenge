@@ -59,9 +59,8 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
-  # TODO: Edit the Dir location as may be necessary, then remove this comment
   config.after(:suite) do
-    FileUtils.rm_rf(Dir["./public/system/posts/images"])
+    FileUtils.rm_rf(Dir["./public/system/pictures/images"])
   end
 
   Shoulda::Matchers.configure do |config|

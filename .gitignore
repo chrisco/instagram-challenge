@@ -20,3 +20,11 @@
 
 # Coveralls
 coverage/*
+
+# Folder used for testing image uploads
+# Cleared after tests with the following
+# (which is in rails_helper.rb)
+#config.after(:suite) do
+#  FileUtils.rm_rf(Dir["./public/system/pictures/images"])
+#end
+public/system/
