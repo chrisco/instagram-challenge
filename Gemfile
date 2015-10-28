@@ -14,6 +14,7 @@ gem 'devise'
 gem 'foundation-rails'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
+gem 'coveralls', require: false
 
 group :production do
   # Adding this as part of my Heroku-related troubleshooting
@@ -37,9 +38,9 @@ group :development do
 end
 
 group :test do
+  gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
-  gem 'rspec-rails'
   gem 'shoulda-matchers'
 end

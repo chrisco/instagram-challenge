@@ -1,16 +1,17 @@
-require 'rails-helper'
+require 'rails_helper'
 require 'pry'
 
 RSpec.feature 'Add Comments to Pictures' do
 
-  before do
-    let! (:george) { create(:user1) }
-    let! (:moomoo) { create(:user2) }
-    let! (:pic) { create(:picture) }
-  end
+    before do
+      george = create(:user1)
+      moo = create(:user2)
+      pic = create(:picture)
+    end
 
   scenario 'signed in users can create Pictures' do
-    login_as(:george)
+    binding.pry
+    login_as(@george)
 
     visit '/'
     click_link "Show"

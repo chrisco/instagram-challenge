@@ -17,3 +17,6 @@
 
 # gem 'dotenv-rails'
 .env
+
+# Coveralls
+coverage/*
