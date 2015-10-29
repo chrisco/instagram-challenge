@@ -6,7 +6,7 @@ RSpec.feature 'Create Comment' do
   context 'when a visitor tries to create a Comment' do
 
     before do
-      @pic = FactoryGirl.create(:picture)
+      @picture = FactoryGirl.create(:picture)
       visit '/'
     end
 
@@ -30,7 +30,7 @@ RSpec.feature 'Create Comment' do
 
     before do
       @foo = User.create(email: 'foo@bar.com', password: 'password', password_confirmation: 'password')
-      @pic = FactoryGirl.create(:picture)
+      @picture = FactoryGirl.create(:picture)
       visit '/'
     end
 

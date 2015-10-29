@@ -28,10 +28,13 @@ The app works online.
 
 ## TODO
 
-* Fix authorizations (for edit, destroy, etc.)
-* More tests
-* Design and implement "Like" feature
-* Style and improve the interface
-* Improve text used in the app and make it consistent
-* Cleanup and refactor code
-* Adjust AWS permissions (locked down as much as possible without breaking app)
+1)  More tests
+2)  Check authorizations for Pictures and Comments (for edit, destroy, etc.)
+3)  Design and implement "Like" feature
+4)  Implement edit/destroy action for comments
+5)  Style and improve the interface
+6)  Improve text used in the app and make it consistent
+7)  Cleanup and refactor code
+8)  Adjust AWS permissions (locked down as much as possible without breaking app)
+9)  Add to user names and avatars (use "papercrop" gem) to app and use them where appropriate
+10) Repeat 5-7, above
