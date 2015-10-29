@@ -1,19 +1,37 @@
 # Instagram Challenge
 
-This educational project is a work in progress.  The idea is to create an Instagram clone with Rails.
+This educational project is a work in progress.  The idea is to create an “Instagram clone.”
+
+## Key Technologies Used
+
+* Ruby
+* Ruby on Rails
+* PostgreSQL
+* Heroku
+* Amazon AWS S3
 
 ## Tests
 
-I spent so much time "spiking" to try to figure out various things, such as how to upload images to S3 via Heroku with Paperclip that no tests have been written yet (but that is changing as I write this).
+Testing with RSpec and Capybara using FactoryGirl: `$ rspec`
 
 ## Status - Development
 
-The current version of the app works locally, at least for me since I have my AWS credentials stored in an ENV variable.
+The app works locally, with AWS credentials stored in an ENV variable.  To run the app:
+
+1) Create databases (test and development)
+2) `$ rails s`
+3) Visit http://localhost:3000
 
 ## Status - Production
 
-The app is not yet working in production.  I have been troubleshooting my code and various configurations having to do with Paperclip, Heroku, and S3, but have been encouraged to move on to other things, which is what I have done.
+The app works online.
 
-## Future
+## TODO
 
-I'll update this README file as may be warranted in the future.
+* Fix authorizations (for edit, destroy, etc.)
+* More tests
+* Design and implement "Like" feature
+* Style and improve the interface
+* Improve text used in the app and make it consistent
+* Cleanup and refactor code
+* Adjust AWS permissions (locked down as much as possible without breaking app)
